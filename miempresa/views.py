@@ -16,3 +16,11 @@ def empleados(request):
 
 def proyectos(request):
         return render(request,'miempresa/proyectos.html')
+def registrarclientes(request):
+        return render(request,'miempresa/clientes.html')
+
+def registrarempleados(request):
+        return render(request,'miempresa/empleados.html')
+
+def registrarproyectos(request):
+        return render(request,'miempresa/proyectos.html')
