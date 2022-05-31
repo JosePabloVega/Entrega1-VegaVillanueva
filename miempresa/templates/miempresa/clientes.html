@@ -1,9 +1,15 @@
 {% extends "miempresa/parent.html" %}
 {% load static %}
 {% block contenidoQueCambia %}
-<h6 class="text-primary text-uppercase font-weight-bold">miempresa</h6>
 <h1 class="mb-4">CLIENTES</h1>
 </div>
 <div class="row">
-    
+<h5>Introduzca el nombre de la empresa a buscar:</h5>
+    <br><br>
+
+    <form action="/resultadocliente" method = "GET">
+        <input type="text" name = "buscar" id="clientes">
+        <input type="submit" value="Buscar">
+        
+    </form>
 {% endblock %}

@@ -1,3 +1,6 @@
 from django.contrib import admin
+from miempresa.models import *
 
-# Register your models here.
+admin.site.register(Empleado)
+admin.site.register(Cliente)
+admin.site.register(Proyecto)

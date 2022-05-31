@@ -4,10 +4,14 @@ from miempresa.views import *
 
 urlpatterns = [
     path('', views.inicio),
-    path('clientes', views.clientes),
+    path('clientes', views.buscarcliente),
     path('empleados', views.empleados),
     path('proyectos', views.proyectos),
-    path('registrarcliente', views.registrarclientes),
-    path('registrarempleado', views.registrarempleados),
-    path('registrarproyecto', views.registrarproyectos),
+    path('registrarcliente', views.registrarcliente),
+    path('registrarempleado', views.registrarempleado),
+    path('registrarproyecto', views.registrarproyecto),
+    path('resultadocliente', views.buscadocliente),
+    path('resultadoempleado', views.buscadoempleado),
+    path('resultadoproyecto', views.buscadoproyecto),
+
 ]

@@ -9,7 +9,7 @@ class Empleado(models.Model):
 class Cliente(models.Model):
     nombrecompleto = models.CharField(max_length=70)
     empresa = models.CharField(max_length=50)
-    proyectos = models.IntegerField()
+    contratacion = models.DateField()
 
 class Proyecto(models.Model):
     cliente = models.CharField(max_length=50)

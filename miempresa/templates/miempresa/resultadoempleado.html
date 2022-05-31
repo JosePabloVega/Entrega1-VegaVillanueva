@@ -1,0 +1,22 @@
+{% extends "miempresa/parent.html" %}
+{% load static %}
+{% block contenidoQueCambia %}
+    <h1 class="mb-4">RESULTADOS DE "{{nombre|upper}}"</h1>
+    </div>
+    <div class="row">
+    {% csrf_token %}
+    {% if empleados %}
+    <ul>
+        {% for e in empleados %}
+            <li>{{e.nombrecompleto}}</li>
+            <li>{{e.empresa}}</li>
+            <li>{{e.contratacion}}</li>
+        {% endfor %}
+    {% else %}
+        <p style="color:red;">No hay registros</p>
+    </ul>
+    {% endif %}
+    {% endblock %}
+
+</body>
+</html>

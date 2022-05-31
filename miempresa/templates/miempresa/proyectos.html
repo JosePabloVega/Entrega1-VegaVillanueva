@@ -1,5 +1,15 @@
 {% extends "miempresa/parent.html" %}
 {% load static %}
 {% block contenidoQueCambia %}
-hola, crayola
+<h1 class="mb-4">CLIENTES</h1>
+</div>
+<div class="row">
+<h5>Introduzca el nombre del proyecto a buscar:</h5>
+    <br><br>
+
+    <form action="/resultadoproyecto" method = "GET">
+        <input type="text" name = "buscarp" id="proyectos">
+        <input type="submit" value="Buscar">
+        
+    </form>
 {% endblock %}
